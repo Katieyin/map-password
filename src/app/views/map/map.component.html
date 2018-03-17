@@ -1,0 +1,20 @@
+<div class="row">
+
+    <div class="col-lg-6"  id="map">
+        <ngui-map
+            zoom="1"
+            center="5.694944, -5.423859"
+            [draggable]="false"
+            [scrollwheel]="false"
+            [mapTypeControl]="false"
+            [zoomControl]="false"
+            [scaleControl]="false"
+            [disableDoubleClickZoom]="true"
+            [disableDefaultUI]="false"
+            [streetViewControl]="false"
+            (mapReady$)="onMapReady($event)"
+            (click)="onMapClick($event)">
+        </ngui-map>
+
+      </div>
+</div>
